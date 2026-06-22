@@ -3,7 +3,7 @@
 import './App.css'
 import Basicprop from './components/Basicprop.jsx';
 import Childrenprops from './components/childrenprop.jsx';
-import complexprops from './components/complexprops.jsx';
+import Complexprops from './components/complexprops.jsx';
 import refprop from './components/refprop.jsx';
 import themetoggler from './components/themetoggler.jsx';
  
@@ -38,6 +38,7 @@ function Navigation(){
       <div className="space-y-8 p-4">
         <div className="scroll-mt-200"><Basicprop /></div>
          <div className="scroll-mt-200"><Childrenprops /></div>
+         <div className="scroll-mt-200"><Complexprops/></div>
         
         
 

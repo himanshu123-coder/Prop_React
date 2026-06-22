@@ -77,7 +77,6 @@ function Childrenprops() {
     
         </div>
 
-
     </div>
     </section>
    )
