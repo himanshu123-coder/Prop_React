@@ -91,13 +91,14 @@ export default function App() {
   const [message, setMessage] = useState("");
 
   const users = [
+    
     {
       user: {
         name: "HIMANSHU",
         email: "himanshu@gmail.com",
         avatar: "😎",
         role: "Intern",
-        status: "Active",
+        status: "inactive",
 
         stats: {
           posts: 123,
@@ -135,24 +136,62 @@ export default function App() {
 
     {
       user: {
-        name: "GOLDI",
-        email: "goldi@gmail.com",
+        name: "OM",
+        email: "dddi@gmail.com",
         avatar: "😁",
         role: "Corporate",
         status: "Active",
 
         stats: {
           posts: 500,
-          commits: 234,
+          commits: 2134,
           pushes: 334,
         },
 
-        commit: {
-          message:
-            "Added profile card and pushed latest React changes",
-          date: "2026-06-22",
-          repo: "react-profile-card",
+      },
+
+      theme: {
+        backgroundColor:
+          "bg-gradient-to-br from-yellow-100 to-orange-100",
+        textColor: "text-gray-800",
+        avatarBg: "bg-yellow-300",
+        badgeBg: "bg-yellow-200",
+      },
+
+      actions: {
+        primary: {
+          label: "View Profile",
+          onClick: () =>
+            setMessage("Viewing hhhh's Profile"),
+          className:
+            "px-3 py-1 rounded bg-orange-500 text-white hover:bg-orange-600",
         },
+
+        secondary: {
+          label: "Message",
+          onClick: () =>
+            setMessage("Opening chat with hhhhh"),
+          className:
+            "px-3 py-1 rounded border border-gray-400",
+        },
+      },
+      
+    },
+    {
+      user: {
+        name: "Hk",
+        email: "KH@gmail.com",
+        avatar: "😉",
+        role: "Corporate",
+        status: "Active",
+
+        stats: {
+          posts: 100,
+          follower: 34,
+          like: 3343,
+          commit : 222,
+        },
+
       },
 
       theme: {
@@ -180,7 +219,9 @@ export default function App() {
             "px-3 py-1 rounded border border-gray-400",
         },
       },
+      
     },
+    
   ];
 
   return (
